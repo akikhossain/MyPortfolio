@@ -1,0 +1,21 @@
+.border-animation {
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #fff8f3; /* Set the border color */
+    border-radius: 8px; /* Set the border radius */
+    pointer-events: none;
+    animation: borderAnimation 1s forwards;
+}
+
+@keyframes borderAnimation {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    to {
+        width: 10%;
+        height: 10%;
+        opacity: 0;
+    }
+}
