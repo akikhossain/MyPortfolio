@@ -62,13 +62,13 @@
                 <img class="profile w-[500px] h-[550px] object-cover rounded-full border-10 border-gray-500"
                     src="{{ asset('assests/images/akikh.png') }}" alt="akik hossain" />
             </div>
-
         </div>
     </header>
 
     <main>
         {{-- about me section --}}
-        <section class="mt-[130px] p-[150px] bg-orange-50 rounded-xl container mx-auto">
+
+        <section class="mt-[130px] p-[150px] bg-orange-50 rounded-xl max-w-screen-xl mx-auto">
             <h3 class="text-center font-bold text-4xl mb-4">About Me</h3>
             <p class="text-center text-gray-500 text-xl leading-7	">
                 I, m a designer & developer with a passion for web design. I enjoy
@@ -99,6 +99,7 @@
             </div>
         </section>
         {{-- end about me section--}}
+
 
         {{-- what i do section --}}
 
@@ -152,41 +153,42 @@
 
 
         {{-- Education section start --}}
-        <section>
-            <h3 class="text-center font-bold text-4xl mb-4">A summary of My Resume</h3>
-            <div class="resume-container">
+
+        <section class="mt-[130px] max-w-screen-xl mx-auto">
+            <h3 class="text-center font-bold text-4xl mb-16">A summary of My Resume</h3>
+            <div class="flex gap-[100px]">
                 <div class="resume-column">
-                    <h3 class="resume-column-title">My Education</h3>
+                    <h3 class="text-gray-700 text-3xl font-bold mb-6">My Education</h3>
                     <div class="resume-item">
-                        <h2 class="resume-item-title">Master in Computer Engineering</h2>
-                        <h3 class="resume-item-institute">
+                        <h2 class="text-gray-600 text-2xl font-bold mb-3">Master in Computer Engineering</h2>
+                        <h3 class="text-gray-500 text-xl font-bold mb-5">
                             Harvard University / 2015 2017
                         </h3>
-                        <p class="resume-item-description">
+                        <p class="text-gray-400 text-lg font-thin   mb-5">
                             List skill/technologies here. You can change the icon above to
                             any of the 1500+ FontAwesome 5 free icons available. Aenean
                             commodo ligula eget dolor
                         </p>
                     </div>
-                    <hr />
+                    <hr class="mb-5" />
                     <div class="resume-item">
-                        <h2 class="resume-item-title">Master in Computer Engineering</h2>
-                        <h3 class="resume-item-institute">
+                        <h2 class="text-gray-600 text-2xl font-bold mb-3">Master in Computer Engineering</h2>
+                        <h3 class="text-gray-500 text-xl font-bold mb-5">
                             Harvard University / 2015 2017
                         </h3>
-                        <p class="resume-item-description">
+                        <p class="text-gray-400 text-lg font-thin mb-5">
                             List skill/technologies here. You can change the icon above to
                             any of the 1500+ FontAwesome 5 free icons available. Aenean
                             commodo ligula eget dolor
                         </p>
                     </div>
-                    <hr />
+                    <hr class="mb-5" />
                     <div class="resume-item">
-                        <h2 class="resume-item-title">Master in Computer Engineering</h2>
-                        <h3 class="resume-item-institute">
+                        <h2 class="text-gray-600 text-2xl font-bold mb-3">Master in Computer Engineering</h2>
+                        <h3 class="text-gray-500 text-xl font-bold mb-5">
                             Harvard University / 2015 2017
                         </h3>
-                        <p class="resume-item-description">
+                        <p class="text-gray-400 text-lg font-thin   mb-5">
                             List skill/technologies here. You can change the icon above to
                             any of the 1500+ FontAwesome 5 free icons available. Aenean
                             commodo ligula eget dolor
@@ -194,31 +196,31 @@
                     </div>
                 </div>
                 <div class="resume-column">
-                    <h3 class="resume-column-title">My Experience</h3>
+                    <h3 class="text-gray-700 text-3xl font-bold mb-6">My Experience</h3>
                     <div class="resume-item">
-                        <h2 class="resume-item-title">Sr. Font End Developer</h2>
-                        <h3 class="resume-item-institute">Apple Inc / 2020 Current</h3>
-                        <p class="resume-item-description">
+                        <h2 class="text-gray-600 text-2xl font-bold mb-3">Sr. Font End Developer</h2>
+                        <h3 class="text-gray-500 text-xl font-bold mb-5">Apple Inc / 2020 Current</h3>
+                        <p class="text-gray-400 text-lg font-thin mb-5">
                             List skill/technologies here. You can change the icon above to
                             any of the 1500+ FontAwesome 5 free icons available. Aenean
                             commodo ligula eget dolor
                         </p>
                     </div>
-                    <hr />
+                    <hr class="mb-5" />
                     <div class="resume-item">
-                        <h2 class="resume-item-title">Sr. Font End Developer</h2>
-                        <h3 class="resume-item-institute">Dribbble Inc / 2018 2022</h3>
-                        <p class="resume-item-description">
+                        <h2 class="text-gray-600 text-2xl font-bold mb-3">Sr. Font End Developer</h2>
+                        <h3 class="text-gray-500 text-xl font-bold mb-5">Dribbble Inc / 2018 2022</h3>
+                        <p class="text-gray-400 text-lg font-thin mb-5">
                             List skill/technologies here. You can change the icon above to
                             any of the 1500+ FontAwesome 5 free icons available. Aenean
                             commodo ligula eget dolor
                         </p>
                     </div>
-                    <hr />
+                    <hr class="mb-5" />
                     <div class="resume-item">
-                        <h2 class="resume-item-title">Sr. Font End Developer</h2>
-                        <h3 class="resume-item-institute">Adobe Inc / 2017 2018</h3>
-                        <p class="resume-item-description">
+                        <h2 class="text-gray-600 text-2xl font-bold mb-3">Sr. Font End Developer</h2>
+                        <h3 class="text-gray-500 text-xl font-bold mb-5">Adobe Inc / 2017 2018</h3>
+                        <p class="text-gray-400 text-lg font-thin mb-5">
                             List skill/technologies here. You can change the icon above to
                             any of the 1500+ FontAwesome 5 free icons available. Aenean
                             commodo ligula eget dolor
@@ -226,10 +228,11 @@
                     </div>
                 </div>
             </div>
-            <div class="download-cv">
-                <button class="btn-primary">
-                    <i class="fa-solid fa-download"></i> Download CV
-                </button>
+            <div class="mt-12 text-center">
+                <a role="button"
+                    class="download-btn bg-orange-600  hover:bg-green-700 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg">
+                    <i class="fa-solid fa-download mr-1 animate-bounce"></i> Download CV
+                </a>
             </div>
         </section>
         {{-- End Education section --}}
