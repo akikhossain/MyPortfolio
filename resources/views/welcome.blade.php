@@ -238,6 +238,43 @@
         {{-- End Education section --}}
     </main>
 
+    {{-- Footer Section --}}
+
+    <footer class="bg-gray-200 flex py-36 px-20 mt-20 gap-20">
+        <div class="w-1/2">
+            <h3 class="font-bold text-4xl mb-10 text-center">Lets Connect</h3>
+            <p class="text-gray-600 text-center text-lg font-normal mb-10">
+                Please fill out the form on this section to contact with me or call
+                between <br />
+                9:00 A.M and 8.00 P.M ET, Monday through Friday.
+            </p>
+            <div class="flex items-center justify-center gap-4 text-3xl">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <h3 class="font-bold text-4xl mb-10 text-center">Let’s Message me</h3>
+            <form action="" class="contact">
+                <input type="text"
+                    class="block mb-6 rounded-md bg-white p-4 text-gray-600 text-base font-normal border-none w-full"
+                    placeholder="Your name" />
+                <input class="block mb-6 rounded-md bg-white p-4 text-gray-600 text-base font-normal border-none w-full"
+                    type="email" placeholder="Your email" />
+                <textarea
+                    class="block mb-6 rounded-md bg-white p-4 text-gray-600 text-base font-normal border-none w-full"
+                    name="Message" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <a type="submit"
+                    class="download-btn bg-orange-600  hover:bg-green-700 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg">
+                    Submit
+                </a>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5c95e5cc68.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5c95e5cc68.js" crossorigin="anonymous"></script>
 </body>
 
