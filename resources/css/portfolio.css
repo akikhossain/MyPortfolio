@@ -7,6 +7,141 @@
     animation: borderAnimation 1s forwards;
 }
 
+/* Target the specific ul with the class 'social-icons' */
+ul.social-icons {
+    display: flex;
+    position: absolute;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+ul.social-icons li {
+    list-style: none;
+}
+
+ul.social-icons li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+ul.social-icons li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+ul.social-icons li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+ul.social-icons li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+ul.social-icons li a:hover:before {
+    top: 0;
+}
+
+ul.social-icons li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+ul.social-icons li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+ul.social-icons li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+ul.social-icons li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+.text {
+    /* position: absolute; */
+    width: 450px;
+    left: 30%;
+    margin-left: 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.word {
+    position: absolute;
+    width: 220px;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+    color: #8e44ad;
+}
+
+.belize {
+    color: #2980b9;
+}
+
+.pomegranate {
+    color: #c0392b;
+}
+
+.green {
+    color: #16a085;
+}
+
+.midnight {
+    color: #2c3e50;
+}
+
 @keyframes borderAnimation {
     from {
         width: 0;

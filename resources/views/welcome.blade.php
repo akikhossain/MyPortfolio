@@ -11,49 +11,90 @@
     @vite('resources/css/portfolio.css')
     @vite('resources/js/portfolio.js')
     <title>Discover Akik Hossain</title>
-
 </head>
 
-<body class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-emerald-300 to-90%">
+<body class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90%">
     <header class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-emerald-300 to-90%"
         style="background-image: url('{{ asset('assests/images/header_bg.png') }}'); background-repeat:no-repeat; background-position: bottom right, top left;">
         <div class="flex justify-start items-start">
             <div class="absolute ml-6 mt-1">
-                <img id="fadeInOutImage" class="opacity-0 transition-opacity duration-1000 mt-10"
+                <img id="fadeInOutImage" class="opacity-0 transition-opacity duration-1000 mt-20 h-[650px]"
                     src="{{ asset('assests/images/developer.png') }}" alt="">
             </div>
-            <nav class="flex justify-between container mx-auto items-center  ">
-                <div class="font-bold text-5xl mt-10">
-                    {{-- <h3><a href=""></a>AK<span class="text-orange-500">I</span>K</h3> --}}
-                    <img class="w-25 h-14" src="{{ asset('assests/images/4.png') }}" alt="">
-                </div>
-                <div class="mt-10">
-                    <ul class="flex gap-10 text-xl">
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a role="button"
-                                class="bg-orange-600 hover:bg-green-700 font-bold text-white px-4 py-2 border rounded">
-                                Hire Me
-                            </a></li>
-                    </ul>
+            <nav
+                class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90%  fixed w-full z-20 top-0 start-0  border-gray-200 ">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="" class="flex items-center">
+                        <img src="{{ asset('assests/images/logo2.png') }}" class="h-14" alt="Flowbite Logo">
+                        {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Akik
+                            Hossain</span> --}}
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button type="button"
+                            class="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-lg  px-4 py-1 mr-2  border  rounded-lg border-none">Hire
+                            Me</button>
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0     d ">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
+
         </div>
         <div class="flex justify-between container mx-auto items-center mt-20">
             <div>
-                <h3 class="text-5xl mb-5">Hi, I am</h3>
-                <h1 class="font-bold text-8xl mb-5">Akik Hossain</h1>
+                <div class="text">
+                    <p>Hello, I am</p>
+                    <p>
+                        <span class="word wisteria">creative.</span>
+                        <span class="word belize">innovative.</span>
+                        <span class="word pomegranate">passionate.</span>
+                        <span class="word green">dedicated.</span>
+                        <span class="word midnight">skilled.</span>
+                    </p>
+                </div>
+                <h1 class="font-bold text-8xl mb-8">Akik Hossain</h1>
                 <p class="mb-8 text-xl text-gray-500 leading-7 w-[556px]">
                     Recent Computer Science graduate with a passion for web development. Let's create something
                     exceptional.
 
-                <div class="mt-12">
+                <div class="mt-8">
                     <a role="button"
-                        class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg">
+                        class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
                         <i class="fa-solid fa-download mr-1 animate-bounce"></i> Download CV
                     </a>
                     <a role="button"
-                        class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg">
+                        class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
                         <i class="fa-solid fa-phone mr-1"></i> Contact
                     </a>
                 </div>
@@ -67,7 +108,7 @@
     <main>
         {{-- about me section --}}
 
-        <section class="mt-[130px] p-[150px] bg-orange-50 rounded-xl max-w-screen-xl mx-auto">
+        <section class="mt-[130px] p-[150px]  rounded-xl max-w-screen-xl mx-auto">
             <h3 class="text-center font-bold text-4xl mb-10">About Me</h3>
             <p class="text-center text-gray-500 text-xl leading-7	">
                 To leverage my skills in web development and contribute to creating visually <br> appealing and
@@ -227,7 +268,7 @@
             </div>
             <div class="mt-12 text-center">
                 <a role="button"
-                    class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg">
+                    class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
                     <i class="fa-solid fa-download mr-1 animate-bounce"></i> Download CV
                 </a>
             </div>
@@ -245,7 +286,7 @@
                 between <br />
                 9:00 A.M and 8.00 P.M ET, Monday through Friday.
             </p>
-            <div class="flex items-center justify-center gap-4 text-4xl">
+            {{-- <div class="flex items-center justify-center gap-4 text-4xl">
                 <a target="_blank" href="https://www.facebook.com/akikhossain.abid"><i
                         class="fa-brands fa-facebook hover:text-blue-700"></i></a>
                 <a target="_blank" href="https://github.com/akikhossain"><i
@@ -254,7 +295,31 @@
                         class="fa-brands fa-linkedin hover:text-yellow-700"></i></a>
                 <a target="_blank" href="https://twitter.com/AKHS87"><i
                         class="fa-brands fa-x-twitter hover:text-green-700"></i></a>
-            </div>
+            </div> --}}
+
+            <ul class="social-icons mt-5">
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/akikhossain.abid">
+                        <i class="fab fa-facebook-f icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/AKHS87">
+                        <i class="fa-brands fa-x-twitter icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/akikhossain/">
+                        <i class="fab fa-linkedin-in icon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/akikhossain">
+                        <i class="fa-brands fa-square-github icon"></i>
+                    </a>
+                </li>
+            </ul>
+
         </div>
         <div class="w-1/2">
             <h3 class="font-bold text-4xl mb-10 text-center">Let’s Message me</h3>
@@ -268,7 +333,7 @@
                     class="block mb-6 rounded-md bg-white p-4 text-gray-600 text-base font-normal border-none w-full"
                     name="Message" placeholder="Message" id="" cols="30" rows="10"></textarea>
                 <a type="submit"
-                    class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg">
+                    class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
                     Submit
                 </a>
             </form>
