@@ -13,7 +13,7 @@ function toggleFadeInOut() {
 // Set an interval to toggle the animation every 2000 milliseconds (2 seconds)
 setInterval(toggleFadeInOut, 2000);
 
-// header button
+// hello banner animation
 var words = document.getElementsByClassName("word");
 var wordArray = [];
 var currentWord = 0;
@@ -71,3 +71,33 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+// about me animation
+
+document.addEventListener("DOMContentLoaded", function () {
+    var aboutImg = document.querySelector(".about_img");
+    var aboutText = document.querySelector(".about_text");
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+                (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function onScroll() {
+        if (isElementInViewport(aboutImg) || isElementInViewport(aboutText)) {
+            aboutImg.classList.add("show");
+            aboutText.classList.add("show");
+            window.removeEventListener("scroll", onScroll);
+        }
+    }
+
+    window.addEventListener("scroll", onScroll);
+    onScroll(); // Check on initial load
+});
