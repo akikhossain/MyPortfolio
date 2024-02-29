@@ -160,6 +160,7 @@ p {
 }
 /* banner hello style end */
 
+/* navbar sticky */
 #navbar-sticky li {
     margin: 10px 0;
     position: relative;
@@ -197,6 +198,7 @@ p {
     width: 100%; /* Expand the underline on hover */
 }
 
+/* about section animation */
 .about_img,
 .about_text {
     opacity: 0;

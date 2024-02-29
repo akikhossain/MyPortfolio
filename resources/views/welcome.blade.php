@@ -13,17 +13,17 @@
     <title>Discover Akik Hossain</title>
 </head>
 
-<body class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90%">
-    <header class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-emerald-300 to-90%"
+<body class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90% ">
+    <header id="home" class=" "
         style="background-image: url('{{ asset('assests/images/header_bg.png') }}'); background-repeat:no-repeat; background-position: bottom right, top left;">
-        <div class="flex justify-start items-start">
+        <div class="flex justify-start items-start ">
             <div class="absolute ml-6 mt-1">
                 <img id="fadeInOutImage" class="opacity-0 transition-opacity duration-1000 mt-20 h-[650px]"
                     src="{{ asset('assests/images/developer.png') }}" alt="">
             </div>
             <nav
-                class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90%  fixed w-full z-20 top-0 start-0 border-b-stone-800">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+                class="fixed w-full z-20 bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90% ">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="" class="flex items-center">
                         <img src="{{ asset('assests/images/logo2.png') }}" class="h-14" alt="Flowbite Logo">
                         {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Akik
@@ -49,24 +49,23 @@
                         <ul
                             class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0     d ">
                             <li>
-                                <a href="#" class="" aria-current="page">Home</a>
+                                <a href="#home" class="" aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="">About</a>
+                                <a href="#about" class="">About</a>
                             </li>
                             <li>
-                                <a href="#" class="">Services</a>
+                                <a href="#services" class="">Services</a>
                             </li>
                             <li>
-                                <a href="#" class="">Contact</a>
+                                <a href="#contact" class="">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
         </div>
-        <div class="flex justify-between container mx-auto items-center mt-20">
+        <div class="flex justify-between container mx-auto items-center mt-20 ">
             <div>
                 <div class="text">
                     <p>Hello, I am</p>
@@ -90,7 +89,7 @@
                     </a>
                     <a role="button"
                         class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
-                        <i class="fa-solid fa-phone mr-1"></i> Contact
+                        <i class="fa-solid fa-phone mr-1 animate-bounce"></i> Contact
                     </a>
                 </div>
             </div>
@@ -100,7 +99,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-emerald-300 to-90%" style=" ">
         {{-- about me section --}}
         {{-- <section class="mt-[130px] p-[150px]  rounded-xl max-w-screen-xl mx-auto">
             <h3 class="text-center font-bold text-4xl mb-10">About Me</h3>
@@ -130,13 +129,13 @@
             </div>
         </section> --}}
 
-        <section class="mt-[130px] p-[150px]  rounded-xl max-w-screen-xl mx-auto" id="about">
+        <section id="about" class="p-[150px]  rounded-xl max-w-screen-xl mx-auto" id="about">
             <h2 class="text-center font-bold text-4xl mb-32">About</h2>
 
             <div class="flex content-center items-center gap-16">
                 <div class="about_img">
-                    <img class="w-[4000px] h-[600px] rounded-2xl drop-shadow-sm hover:drop-shadow-2xl"
-                        src="{{ asset('assests/images/akikh5.png') }}" alt="">
+                    <img class="w-[4000px] h-[700px] rounded-full drop-shadow-sm hover:drop-shadow-2xl"
+                        src="{{ asset('assests/images/formal.png') }}" alt="">
                 </div>
 
                 <div class="about_text">
@@ -161,7 +160,7 @@
 
         {{-- what i do section --}}
 
-        <section class="mt-[130px] py-[30px] px-[150px] container mx-auto">
+        <section id="services" class="mt-[100px] py-[30px] px-[150px] container mx-auto">
             <h3 class="text-center font-bold text-4xl mb-4">What I Do</h3>
             <div class="text-center">
                 <p class=" text-gray-500 text-xl leading-7">
@@ -172,34 +171,34 @@
                     Check out my online resume and project portfolio
                 </p>
             </div>
-            <div class="flex gap-6 mt-12">
+            <div class="grid grid-cols-4 gap-6 mt-12">
                 <div
                     class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-300 hover:scale-105">
                     <img src="{{ asset('assests/images/icons/js.png') }}" alt="vanilla Javascript" />
                     <h3 class="font-bold text-xl mt-4">Vanilla JavaScript</h3>
                     <p class="skill-description mt-4 text-gray-500">
-                        List skill/technologies here. You can change the icon above to any
-                        of the 1500+ FontAwesome 5 free icons available.
+                        JavaScript powers web interactivity, crucial for responsive sites and dynamic applications,
+                        enhancing user experience.
                     </p>
                 </div>
                 <div
-                    class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-300 hover:scale-105">
-                    <img src="{{ asset('assests/images/icons/react.png') }}" alt="vanilla Javascript" />
-                    <h3 class="font-bold text-xl mt-4">Vanilla JavaScript</h3>
+                    class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:border-gray-200 hover:scale-105">
+                    <img src="{{ asset('assests/images/tailwind.jpg') }}" alt="vanilla Javascript" />
+                    <h3 class="font-bold text-xl mt-4">Tailwind</h3>
                     <p class="skill-description mt-4">
-                        List skill/technologies here. You can change the icon above to any
-                        of the 1500+ FontAwesome 5 free icons available.
+                        Tailwind CSS: Rapid, flexible styling with utility-first classes for efficient, modern,
+                        responsive web development.
                     </p>
                 </div>
                 <div class="p-8 leading-7  shadow-xl">
-                    <img src="{{ asset('assests/images/icons/react.png') }}" alt="vanilla Javascript" />
-                    <h3 class="font-bold text-xl mt-4">Vanilla JavaScript</h3>
+                    <img src="{{ asset('assests/images/php.png') }}" alt="vanilla Javascript" />
+                    <h3 class="font-bold text-xl mt-4">PHP</h3>
                     <p class="skill-description mt-4">
-                        List skill/technologies here. You can change the icon above to any
-                        of the 1500+ FontAwesome 5 free icons available.
+                        PHP powers dynamic web pages, seamlessly integrating with HTML, handling data, forms, and
+                        databases for interactive websites.
                     </p>
                 </div>
-                <div class="p-8 leading-7  shadow-xl">
+                <div class="p-8 leading-7  shadow-xl ">
                     <img src="{{ asset('assests/images/icons/react.png') }}" alt="vanilla Javascript" />
                     <h3 class="font-bold text-xl mt-4">Vanilla JavaScript</h3>
                     <p class="skill-description mt-4">
@@ -208,13 +207,19 @@
                     </p>
                 </div>
             </div>
+
+
+
+
+
+
         </section>
         {{-- end what i do section --}}
 
 
         {{-- Education section start --}}
 
-        <section class="mt-[130px] max-w-screen-xl mx-auto">
+        <section class="mt-[130px] max-w-screen-xl mx-auto py-11">
             <h3 class="text-center font-bold text-4xl mb-16">A summary of My Resume</h3>
             <div class="flex gap-[100px]">
                 <div class="resume-column">
@@ -289,19 +294,19 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-12 text-center">
+            <div class="mt-12 text-center" style=" ">
                 <a role="button"
-                    class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
+                    class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 rounded-lg border-none">
                     <i class="fa-solid fa-download mr-1 animate-bounce"></i> Download CV
                 </a>
             </div>
         </section>
-        {{-- End Education section --}}
     </main>
 
     {{-- Footer Section --}}
 
-    <footer class="flex py-36 px-20 mt-20 gap-20 text-center">
+    <footer id="contact"
+        class="flex py-36 px-20 gap-20 text-center bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90%">
         <div class="w-1/2">
             <h3 class="font-bold text-4xl mb-10 text-center">Lets Connect</h3>
             <p class="text-gray-600 text-center text-lg font-normal mb-10">

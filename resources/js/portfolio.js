@@ -73,7 +73,6 @@ changeWord();
 setInterval(changeWord, 4000);
 
 // about me animation
-
 document.addEventListener("DOMContentLoaded", function () {
     var aboutImg = document.querySelector(".about_img");
     var aboutText = document.querySelector(".about_text");
@@ -100,4 +99,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", onScroll);
     onScroll(); // Check on initial load
+});
+
+//navbar smooth scrolling to different
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    });
 });
