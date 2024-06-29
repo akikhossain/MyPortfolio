@@ -58,6 +58,9 @@
                                 <a href="#services" class="">Services</a>
                             </li>
                             <li>
+                                <a href="#projects" class="">Projects</a>
+                            </li>
+                            <li>
                                 <a href="#contact" class="">Contact</a>
                             </li>
                         </ul>
@@ -83,7 +86,7 @@
                     exceptional.
 
                 <div class="mt-8">
-                    <a role="button"
+                    <a href="{{ asset('Akik Hossain.pdf') }}" target="_blank" role="button"
                         class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 border  rounded-lg border-none">
                         <i class="fa-solid fa-download mr-1 animate-bounce"></i> Download CV
                     </a>
@@ -130,7 +133,7 @@
         </section> --}}
 
         <section id="about" class="p-[150px]  rounded-xl max-w-screen-xl mx-auto" id="about">
-            <h2 class="text-center font-bold text-4xl mb-32">About</h2>
+            <h2 class="text-center font-bold text-4xl mb-32 uppercase">About</h2>
 
             <div class="flex content-center items-center gap-16">
                 <div class="about_img">
@@ -161,9 +164,9 @@
         {{-- what i do section --}}
 
         <section id="services" class="mt-[100px] py-[30px] px-[150px] container mx-auto">
-            <h3 class="text-center font-bold text-4xl mb-4">What I Do</h3>
+            <h3 class="text-center font-bold text-4xl mb-8 uppercase">What I Do</h3>
             <div class="text-center">
-                <p class=" text-gray-500 text-xl leading-7">
+                <p class=" text-gray-500 text-xl leading-7 mb-8">
                     I have more than 10 years experience building software for clients all
                     over the world. Below is a quick <br />
                     overview of my main technical skill sets and technologies i use. Want
@@ -173,10 +176,10 @@
             </div>
             <div class="grid grid-cols-4 gap-6 mt-12">
                 <div
-                    class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-300 hover:scale-105">
+                    class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:border-gray-200 hover:scale-105">
                     <img src="{{ asset('assests/images/icons/js.png') }}" alt="vanilla Javascript" />
                     <h3 class="font-bold text-xl mt-4">Vanilla JavaScript</h3>
-                    <p class="skill-description mt-4 text-gray-500">
+                    <p class="skill-description mt-4">
                         JavaScript powers web interactivity, crucial for responsive sites and dynamic applications,
                         enhancing user experience.
                     </p>
@@ -190,7 +193,8 @@
                         responsive web development.
                     </p>
                 </div>
-                <div class="p-8 leading-7  shadow-xl">
+                <div
+                    class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:border-gray-200 hover:scale-105">
                     <img src="{{ asset('assests/images/php.png') }}" alt="vanilla Javascript" />
                     <h3 class="font-bold text-xl mt-4">PHP</h3>
                     <p class="skill-description mt-4">
@@ -198,21 +202,16 @@
                         databases for interactive websites.
                     </p>
                 </div>
-                <div class="p-8 leading-7  shadow-xl ">
+                <div
+                    class="p-8 leading-7 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:border-gray-200 hover:scale-105">
                     <img src="{{ asset('assests/images/icons/react.png') }}" alt="vanilla Javascript" />
-                    <h3 class="font-bold text-xl mt-4">Vanilla JavaScript</h3>
+                    <h3 class="font-bold text-xl mt-4">Laravel</h3>
                     <p class="skill-description mt-4">
                         List skill/technologies here. You can change the icon above to any
                         of the 1500+ FontAwesome 5 free icons available.
                     </p>
                 </div>
             </div>
-
-
-
-
-
-
         </section>
         {{-- end what i do section --}}
 
@@ -220,7 +219,7 @@
         {{-- Education section start --}}
 
         <section class="mt-[130px] max-w-screen-xl mx-auto py-11">
-            <h3 class="text-center font-bold text-4xl mb-16">A summary of My Resume</h3>
+            <h3 class="text-center font-bold text-4xl mb-20 uppercase">A summary of My Resume</h3>
             <div class="flex gap-[100px]">
                 <div class="resume-column">
                     <h3 class="text-gray-700 text-3xl font-bold mb-6">My Education</h3>
@@ -295,12 +294,154 @@
                 </div>
             </div>
             <div class="mt-12 text-center" style=" ">
-                <a role="button"
+                <a href="{{ asset('Akik Hossain.pdf') }}" role="button"
                     class="download-btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:from-pink-500 hover:to-yellow-500 font-bold text-white text-xl px-8 mr-2 py-4 rounded-lg border-none">
                     <i class="fa-solid fa-download mr-1 animate-bounce"></i> Download CV
                 </a>
             </div>
         </section>
+
+        {{-- Education section end --}}
+
+        {{-- Project Section --}}
+
+        <section id="projects" class="mt-[150px] py-[30px] px-[150px] mb-[100px] container mx-auto">
+            <h3 class="text-center font-bold text-4xl mb-8">PROJECTS</h3>
+            <div class="text-center">
+                <p class="text-gray-500 text-xl leading-7 mb-8">
+                    I have more than 10 years experience building software for clients all over the world. Below is a
+                    quick <br />
+                    overview of my main technical skill sets and technologies I use. Want to find out more about my
+                    experience? <br />
+                    Check out my online resume and project portfolio.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 mb-8">
+                <a href="https://github.com/akikhossain/Employee-Management-System" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image.png') }}" alt="Project 1"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Employee System | Laravel</h3>
+                    </div>
+                </a>
+                <a href="https://github.com/akikhossain/onlineShop" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image2.png') }}" alt="Project 2"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">E-Commerce Shop | Laravel</h3>
+                    </div>
+                </a>
+                <a href="https://github.com/akikhossain/quizsystem" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image15.png') }}" alt="Project 2"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">QUIZ SYSTEM | Laravel</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/MyTube/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image3.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">MY TUBE | REACT</h3>
+                    </div>
+                </a>
+                <a href="https://652fc06dfd970b09a6df59ff--careerhubbyreact.netlify.app/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image14.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Career Hub | REACT</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Phone-Hunter-API/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image4.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Phone Hunter | JavaScript</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Shop-Craze/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image5.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Shop-Craze | javascript</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Simple-Bank-Manager-Monitor-Deposits-and-Withdrawals/" target="_blank"
+                    class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image6.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Bank Manager | Javascript</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Geometric-Guru/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image7.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Geometric-Guru | Javascript</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Fruit-Brust-with-Daisy-UI/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image8.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Fruit-Brust</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Tea-House-with-Daisy-UI/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image9.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Tea House | tailwind</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Biker-Zone-Project-with-Daisy-UI/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image10.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Biker Zone | tailwind</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/GameZoneHub/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image11.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Game Zone Hub</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/influence-gear/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image12.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">Influencer Gear</h3>
+                    </div>
+                </a>
+                <a href="http://akikhossain.me/Legal-Solution-with-Daisy-UI/" target="_blank" class="block">
+                    <div
+                        class="flex flex-col justify-between p-8 hover:bg-gray-600 hover:text-white shadow-xl transform rounded-xl bg-white transition duration-1000 hover:scale-105">
+                        <img src="{{ asset('assests/images/image13.png') }}" alt="Project 3"
+                            class="h-52 w-full object-cover rounded-xl" />
+                        <h3 class="font-bold text-xl mt-4 text-center uppercase">legal solution | tailwind</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
     </main>
 
     {{-- Footer Section --}}
@@ -308,7 +449,7 @@
     <footer id="contact"
         class="flex py-36 px-20 gap-20 text-center bg-gradient-to-r from-indigo-300 from-10% via-sky-300 via-30% to-purple-300 to-90%">
         <div class="w-1/2">
-            <h3 class="font-bold text-4xl mb-10 text-center">Lets Connect</h3>
+            <h3 class="font-bold text-4xl mb-10 text-center uppercase">Lets Connect</h3>
             <p class="text-gray-600 text-center text-lg font-normal mb-10">
                 Please fill out the form on this section to contact with me or call
                 between <br />
@@ -350,7 +491,7 @@
 
         </div>
         <div class="w-1/2">
-            <h3 class="font-bold text-4xl mb-10 text-center">Let’s Message me</h3>
+            <h3 class="font-bold text-4xl mb-10 text-center uppercase">Let’s Message me</h3>
             <form action="" class="contact">
                 <input type="text"
                     class="block mb-6 rounded-md bg-white p-4 text-gray-600 text-base font-normal border-none w-full"
